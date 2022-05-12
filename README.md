@@ -25,4 +25,17 @@ These three versions will be given in three different packages: Package1, Packag
 
 3. Lastly, Package3 has a kilometer.py file which expands into the third context by computing the distance between two coordinates in kilometers and in spherical geometry. This should be done without modifying the current implementation, which increases the reusability. Here, the Earth's radius is considered to be 6359 kilometers. 
 
+## Example Output
+
+Relevant import statements needs to be changed in Application.py file when testing each version of the program. For instance, in phase 1, the position.py file from Package1 is imported: 
    
+<img width="956" alt="Screen Shot 2022-05-12 at 1 44 02 AM" src="https://user-images.githubusercontent.com/105037989/168000276-a8951608-91b8-4962-abc2-2130388feaa8.png">
+
+Next, in phase 2, Package1 should be changed to Package2 at the import line, and the Geometry() constructors should be changed to SphericalGeo():
+
+<img width="1142" alt="Screen Shot 2022-05-12 at 1 47 19 AM" src="https://user-images.githubusercontent.com/105037989/168000620-941218c0-fdc4-49d7-b3e6-5f4c86f7dfd5.png">
+ 
+Lastly, in phase 3, kilometer is imported from Package3 and the Units() constructors should be changed to Kilometer() as shown below:
+
+<img width="1126" alt="Screen Shot 2022-05-12 at 1 49 50 AM" src="https://user-images.githubusercontent.com/105037989/168000942-f83da12f-1cc2-4c35-8340-ac633dba7c8b.png">
+
